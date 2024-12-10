@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+   </head>
+
+<body>
+<header>
+<h1>Bem vindo </h1>
+</header>
+<main>
+    <!-- Primeiro bloco -->
+    <section class="galeria"> <br><br>
+        <h2>Galeria</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="img/car-oil-workshop.jpg" alt="Workshop de Óleo"></div>
+                <div class="slide"><img src="img/Check.jpg" alt="Inspeção de Carro"></div>
+                <div class="slide"><img src="img/inspeções.jpg" alt="Inspeções de veículos"></div>
+               
+            </div>
+        </div>
+    </section>
+<!-- Segundo bloco -->
+  <section class="cartoes">
+       <div class="cards ">
+        <h3></h3> <br>
+        <p>Veja os nossos serviços abaixo</p> <br>
+        <div class="cards">
+        <div class ="card">
+        <h4>Geral</h4>
+        <p></p>
+        <img src="img/Geral.jpg" alt="Troca de oleo">
+        <div class="loader"></div>
+
+        <div class="cards">
+        <div class ="card">
+        <h4>Troca de oleo</h4>
+        <p></p>
+        <img src="img/oleo.jpg" alt="Troca de oleo">
+        <div class="loader"></div>
+        
+
+        <div class="cards">
+        <div class ="card">
+        <h4>Travões</h4>
+        <p></p>
+        <img src="img/travoes.jpg.jpg" alt="Travões"> <br>
+        <div class="loader"></div>
+
+  </section>
+<!-- Terceiro bloco: Formulário  ultilizando o form-group  -->
+<section class="contactForm">
+    <h3>Entre em contato</h3>
+    <form id="contactForm">
+     <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="formMessage" class="form-message"></p>
+</section>
+</main>
+    <footer>
+        <p>&copy; 2024 Nossa Empresa</p>
+    </footer>
+</body>
+</html>
