@@ -20,52 +20,108 @@ header {
     color: white;
     text-align: center;
     padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra no header */
 }
 
-/* Footer */
-footer {
-    background-color: rgb(18, 17, 17);
-    color: white;
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Seção principal */
+main {
+    padding: 20px;
+}
+
+.missao {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.descricao-missao {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify; /* Melhor leitura */
+}
+
+/* Títulos das seções */
+.section-titulo {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     text-align: center;
-    padding: 10px 20px;
-    margin-top: auto; /* Footer fica no final da página */
 }
 
-/* Estilo da galeria */
+/* Seções (Visão, Compromisso, etc.) */
+.visao, .compromisso {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.visao:hover, .compromisso:hover {
+    transform: translateY(-5px); /* Efeito hover */
+}
+
+/* Links de navegação */
+.link-navegacao {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.3s;
+}
+
+.link-navegacao:hover {
+    color: #4CAF50; /* Verde quando passa o mouse */
+}
+
+.link-navegacao h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Estilo para a galeria */
 .galeria {
-    padding: 30px;  /* Ajuste o padding de acordo com o espaçamento desejado */
+    padding: 30px;
     background-color: #fff;
     text-align: center;
 }
 
-.galeria .slider {
-    display: flex; /* Exibe as imagens lado a lado */
-    justify-content: center; /* Alinha as imagens no centro */
-    gap: 20px; /* Espaço entre as imagens */
-    flex-wrap: wrap; /* Permite que as imagens se ajustem quando a tela for pequena */
-}
-
-.galeria .slide {
-    width: 100%; /* Faz a imagem ocupar toda a largura disponível, mas sem ultrapassar o limite */
-    max-width: 300px; /* Limita o tamanho máximo das imagens */
-    height: auto; /* Mantém a proporção das imagens */
-}
-
-.galeria img {
-    width: 100%; /* Faz as imagens preencherem o tamanho do slide */
-    height: auto; /* Mantém a proporção das imagens */
-    border-radius: 8px; /* Opcional: arredonda as bordas das imagens */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: adiciona sombra nas imagens */
-}
-
-/* Ajuste para o título da galeria */
 .galeria h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: rgb(18, 17, 17);
 }
 
-/* Estilo do segundo bloco (Cartões) */
+.galeria .slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galeria .slide {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os cartões */
 .cartoes {
     padding: 30px;
     background-color: #f9f9f9;
@@ -74,8 +130,8 @@ footer {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Layout flexível */
-    gap: 20px; /* Espaçamento entre os cartões */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
     margin-top: 20px;
 }
 
@@ -85,70 +141,62 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    display: flex; /* Habilita o layout flex */
-    flex-direction: column; /* Organiza os itens na direção vertical */
-    justify-content: center; /* Garante que os itens dentro do card estejam centralizados */
-    align-items: center; /* Alinha os itens no centro horizontalmente */
-    height: 100%; /* Faz com que o cartão ocupe toda a altura disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 .card img {
-    width: 80%; /* Ajusta a largura da imagem (ajuste conforme necessário) */
-    max-width: 250px; /* Limita o tamanho máximo da imagem */
+    width: 80%;
+    max-width: 250px;
     height: auto;
     border-radius: 8px;
-    object-fit: cover; /* Mantém a proporção da imagem sem distorcê-la */
-    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
-    display: block; /* Garante que a imagem seja tratada como um bloco */
-    margin-left: auto; /* Alinha a imagem à esquerda */
-    margin-right: auto; /* Alinha a imagem à direita */
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
-/* Efeito de hover nos cartões */
-.card:hover {
-    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
-}
-
-/* CSS do Loader */
+/* Loader (carregamento) */
 .loader {
-  width: 50px;
-  aspect-ratio: 1;
-  display: grid;
-  color: #854f1d;
-  background: radial-gradient(farthest-side, currentColor calc(100% - 6px), #0000 calc(100% - 5px) 0);
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 13px), #000 calc(100% - 12px));
-  border-radius: 50%;
-  animation: l19 2s infinite linear;
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    color: #854f1d;
+    background: radial-gradient(farthest-side, currentColor calc(100% - 6px), #0000 calc(100% - 5px) 0);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 13px), #000 calc(100% - 12px));
+    border-radius: 50%;
+    animation: l19 2s infinite linear;
 }
 
-/* Estilos adicionais para os "before" e "after" da animação */
 .loader::before,
 .loader::after {
-  content: "";
-  grid-area: 1/1;
-  background: linear-gradient(currentColor 0 0) center,
-    linear-gradient(currentColor 0 0) center;
-  background-size: 100% 10px, 10px 100%;
-  background-repeat: no-repeat;
+    content: "";
+    grid-area: 1/1;
+    background: linear-gradient(currentColor 0 0) center, linear-gradient(currentColor 0 0) center;
+    background-size: 100% 10px, 10px 100%;
+    background-repeat: no-repeat;
 }
 
 .loader::after {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
-/* Keyframes para a animação do loader */
 @keyframes l19 {
-  100% {
-    transform: rotate(1turn);
-  }
+    100% {
+        transform: rotate(1turn);
+    }
 }
 
-/* Estilos para esconder o loader depois que o conteúdo for carregado */
 .loader.hidden {
-  display: none;
+    display: none;
 }
 
-/* Estilo para o formulário de contato */
+/* Formulário de contato */
 .contactForm {
     padding: 30px;
     background-color: #fff;
@@ -196,11 +244,11 @@ footer {
     background-color: #45a049;
 }
 
-/* Estilo para as mensagens de erro ou sucesso */
+/* Mensagens de erro ou sucesso */
 .form-message {
     margin-top: 20px;
     font-size: 1rem;
-    color: #d9534f; /* Cor vermelha para mensagens de erro */
+    color: #d9534f;
 }
 
 /* Responsividade */
@@ -214,7 +262,7 @@ footer {
     }
 
     .card img {
-        width: 90%; /* Ajusta as imagens em telas menores */
+        width: 90%;
     }
 
     .contactForm {
@@ -236,7 +284,7 @@ footer {
     }
 
     .card img {
-        width: 90%; /* Ajusta as imagens em telas menores */
+        width: 90%;
     }
 
     .contactForm {
@@ -254,11 +302,11 @@ footer {
     }
 
     .cards {
-        grid-template-columns: 1fr; /* Coloca os cartões em uma única coluna */
+        grid-template-columns: 1fr;
     }
 
     .card img {
-        width: 90%; /* Ajusta as imagens em telas menores */
+        width: 90%;
     }
 
     .contactForm {

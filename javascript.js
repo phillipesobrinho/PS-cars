@@ -33,17 +33,5 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         return;
     }
 
-//     // Simulação do envio para o endpoint (ex. PHP)
-//     fetch('endpoint.php', {
-//         method: 'POST',
-//         body: new URLSearchParams({ name, email })
-//     })
-//     .then(response => response.text())
-//     .then(data => {
-//         alert('Sucesso! Dados enviados com sucesso.');
-//     })
-//     .catch(error => {
-//         console.error('Erro:', error);
-//         alert('Erro ao enviar os dados.');
-//     });
+
  });
