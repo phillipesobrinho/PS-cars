@@ -209,46 +209,39 @@ header h1 {
 
 
 /* Parte 3 Formulário de contato */
+
 .contactForm {
-    padding: 30px;
+    padding: 20px; /* Reduzindo o padding */
     background-color: #fff;
     text-align: center;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%; /* Largura ajustada */
+    max-width: 800px; /* Largura máxima reduzida */
+    margin-left: auto;
+    margin-right: auto; /* Centralizando o formulário */
 }
 
-.contactForm h3 {
-    margin-bottom: 20px;
-    color: rgb(18, 17, 17);
-}
-
-.contactForm .form-group {
-    margin-bottom: 15px;
-}
-
-.contactForm label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
+/* Estilo para os campos de input */
 .contactForm input {
-    width: 100%;
-    padding: 10px;
+    width: 100%; /* Ocupar toda a largura disponível */
+    padding: 10px; /* Menor padding */
     border: 1px solid #ccc;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Tamanho da fonte reduzido */
+    margin-bottom: 15px; /* Menor espaço entre os campos */
 }
 
+/* Estilo para o botão de envio */
 .contactForm button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Menor padding */
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Tamanho da fonte reduzido */
     transition: background-color 0.3s ease;
 }
 
@@ -258,127 +251,71 @@ header h1 {
 
 /* Mensagens de erro ou sucesso */
 .form-message {
-    margin-top: 20px;
-    font-size: 1rem;
+    margin-top: 10px;
+    font-size: 0.9rem; /* Tamanho da fonte reduzido */
     color: #d9534f;
 }
 
-
-
-
-/* tentando meter  Responsividade */
+/* Responsividade para telas menores */
 @media (max-width: 1024px) {
-    .galeria h2 {
-        font-size: 1.8rem;
-    }
-
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .card img {
-        width: 90%;
-    }
-
     .contactForm {
-        padding: 25px;
+        width: 90%; /* Reduzindo a largura para telas médias */
+        padding: 15px; /* Ajustando o padding */
     }
 
-    .contactForm input {
-        padding: 12px;
+    .contactForm input,
+    .contactForm button {
+        font-size: 0.8rem; /* Ajustando o tamanho da fonte */
     }
 }
 
 @media (max-width: 768px) {
-    .galeria h2 {
-        font-size: 1.6rem;
-    }
-
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .card img {
-        width: 90%;
-    }
-
     .contactForm {
-        padding: 20px;
+        width: 95%; /* Mais estreito em telas pequenas */
+        padding: 10px; /* Reduzindo o padding */
     }
 
     .contactForm input {
-        padding: 10px;
+        font-size: 0.8rem; /* Ajustando o tamanho da fonte */
+        padding: 8px; /* Diminui o padding */
+    }
+
+    .contactForm button {
+        font-size: 0.8rem; /* Ajustando o tamanho da fonte */
+        padding: 8px 15px; /* Ajuste do botão */
     }
 }
 
 @media (max-width: 480px) {
-    .galeria h2 {
-        font-size: 1.4rem;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .card img {
-        width: 90%;
-    }
-
     .contactForm {
-        padding: 20px;
+        width: 100%; /* Preenchendo toda a largura disponível */
+        padding: 10px; /* Reduzindo o padding */
     }
 
     .contactForm input {
-        padding: 10px;
-    }
-}
-g: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .galeria h2 {
-        font-size: 1.4rem;
+        font-size: 0.8rem; /* Reduzindo o tamanho da fonte */
+        padding: 8px; /* Reduzindo o padding */
     }
 
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .card img {
-        width: 90%;
-    }
-
-    .contactForm {
-        padding: 20px;
-    }
-
-    .contactForm input {
-        padding: 10px;
-    }
-}
-g: 10px;
+    .contactForm button {
+        font-size: 0.8rem; /* Ajuste do tamanho da fonte */
+        padding: 8px 15px; /* Ajuste do tamanho do botão */
     }
 }
 
-@media (max-width: 480px) {
-    .galeria h2 {
-        font-size: 1.4rem;
-    }
+/* Estilo para os links das redes sociais */
+.social-links {
+    margin-top: 20px;
+}
 
-    .cards {
-        grid-template-columns: 1fr;
-    }
+.social-links a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s;
+}
 
-    .card img {
-        width: 90%;
-    }
-
-    .contactForm {
-        padding: 20px;
-    }
-
-    .contactForm input {
-        padding: 10px;
-    }
+.social-links a:hover {
+    color: #4CAF50;
 }
