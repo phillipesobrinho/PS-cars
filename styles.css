@@ -26,12 +26,12 @@ header {
 /* Links de navegação */
 .link-navegacao {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     transition: color 0.3s;
 }
 
 .link-navegacao:hover {
-    color: green; /* PRETO quando passa o mouse */
+    color: black; /* Verde quando passa o mouse */
 }
 
 .link-navegacao h1 {
@@ -67,8 +67,8 @@ main {
     text-align: center;
 }
 
-/* Seções (Missão, Compromisso, etc.) */
-.missao, .compromisso {
+/* Seções (Visão, Compromisso, etc.) */
+.visao, .compromisso {
     background-color: #ffffff;
     padding: 30px;
     margin-bottom: 30px;
@@ -77,20 +77,18 @@ main {
     transition: transform 0.3s ease;
 }
 
-.missao:hover, .compromisso:hover {
+.visao:hover, .compromisso:hover {
     transform: translateY(-5px); /* Efeito hover */
 }
 
 
-/* Centralizar as três galerias */
-.galeria{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;  /* Espaçamento entre as galerias */
-    flex-wrap: wrap; /* Permite que os carrosséis se ajustem em telas menores */
-    margin-top: 20px;
-    padding: 20%;
+/* Estilo para a galeria */
+.galeria {
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
 }
+
 .galeria h2 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -117,55 +115,8 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* Estilo das imagens no carrossel */
-.galeria {
-    flex: 1 1 48%; /* A galeria central ocupa 48% da largura disponível */
-    background-color: #fff;
-    text-align: center;
-}
 
-/* Carrossel Laterais */
-.carrossel-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 48%; /* Cada carrossel lateral ocupa 48% da largura */
-}
 
-/* Ajuste nas imagens para que se ajustem melhor */
-.carousel-item img {
-    object-fit: cover; /* Garante que as imagens preencham completamente o espaço */
-    width: 100%;  /* Imagem ocupa toda a largura do carrossel */
-    height: auto;  /* Mantém a proporção da imagem */
-    border-radius: 10px;
-}
-
-/* Estilo para os carrosséis laterais */
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    max-height: 300px; /* Ajusta a altura dos carrosséis laterais */
-}
-
-/* Garantir que os carrosséis se ajustem bem */
-.carousel-item {
-    opacity: 0; /* As imagens começam invisíveis */
-    transition: opacity 0.5s ease-in-out; /* Transição suave */
-    position: absolute; /* Para manter as imagens no mesmo lugar */
-    width: 100%;
-    height: auto;
-}
-
-.carousel-item.active {
-    opacity: 1; /* Imagem ativa é visível */
-    position: relative; /* Faz com que a imagem ativa seja visível */
-}
-
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
-    transition: transform 0.5s ease, opacity 0.5ms ease; /* Transição para as imagens ativas */
-}
 header h1 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -214,7 +165,7 @@ header h1 {
     width: 80%;
     max-width: 250px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 8px;
     object-fit: cover;
     margin-bottom: 15px;
 }
@@ -266,8 +217,8 @@ header h1 {
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Largura ajustada */
-    max-width: 380px; /* Largura máxima reduzida */
+    width: 40%; /* Largura ajustada */
+    max-width: 800px; /* Largura máxima reduzida */
     margin-left: auto;
     margin-right: auto; /* Centralizando o formulário */
 }
@@ -305,8 +256,52 @@ header h1 {
     color: #d9534f;
 }
 
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .contactForm {
+        width: 90%; /* Reduzindo a largura para telas médias */
+        padding: 15px; /* Ajustando o padding */
+    }
 
+    .contactForm input,
+    .contactForm button {
+        font-size: 0.8rem; /* Ajustando o tamanho da fonte */
+    }
+}
 
+@media (max-width: 768px) {
+    .contactForm {
+        width: 95%; /* Mais estreito em telas pequenas */
+        padding: 10px; /* Reduzindo o padding */
+    }
+
+    .contactForm input {
+        font-size: 0.8rem; /* Ajustando o tamanho da fonte */
+        padding: 8px; /* Diminui o padding */
+    }
+
+    .contactForm button {
+        font-size: 0.8rem; /* Ajustando o tamanho da fonte */
+        padding: 8px 15px; /* Ajuste do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .contactForm {
+        width: 100%; /* Preenchendo toda a largura disponível */
+        padding: 10px; /* Reduzindo o padding */
+    }
+
+    .contactForm input {
+        font-size: 0.8rem; /* Reduzindo o tamanho da fonte */
+        padding: 8px; /* Reduzindo o padding */
+    }
+
+    .contactForm button {
+        font-size: 0.8rem; /* Ajuste do tamanho da fonte */
+        padding: 8px 15px; /* Ajuste do tamanho do botão */
+    }
+}
 
 /* Estilo para os links das redes sociais */
 .social-links {
@@ -324,4 +319,3 @@ header h1 {
 .social-links a:hover {
     color: #4CAF50;
 }
-
