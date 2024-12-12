@@ -1,7 +1,5 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,98 +9,89 @@
 
 <body>
 <header>
-<h1>Bem vindo </h1>
+    <h1>Bem-vindo</h1>
 </header>
 
 <main>
     <!-- Links de navegação para as seções -->
-    <header class="navegacao-header">
+    <nav class="navegacao-header">
         <a href="sobre.html" class="link-navegacao"><h1>Sobre a Nossa Empresa</h1></a>
         <a href="missao.html" class="link-navegacao"><h1>Missão</h1></a>
         <a href="localizacao.html" class="link-navegacao"><h1>Localização</h1></a>
-    </header>
- 
-
-
+    </nav>
 
     <!-- Primeiro bloco -->
-    <section class="galeria"> <br><br>
+    <section class="galeria">
         <h2>Galeria</h2>
         <div class="slider">
             <div class="slides">
                 <div class="slide"><img src="img/car-oil-workshop.jpg" alt="Workshop de Óleo"></div>
                 <div class="slide"><img src="img/Check.jpg" alt="Inspeção de Carro"></div>
                 <div class="slide"><img src="img/inspeções.jpg" alt="Inspeções de veículos"></div>
-               
             </div>
         </div>
     </section>
 
-
-
-    
-<!-- Segundo bloco -->
-  <section class="cartoes">
-       <div class="cards ">
-        <h3></h3> <br>
-        <p>Veja os nossos serviços abaixo</p> <br>
+    <!-- Segundo bloco -->
+    <section class="cartoes">
+        <h3>Veja os nossos serviços abaixo</h3>
         <div class="cards">
-        <div class ="card">
-        <h4>Geral</h4>
-        <p></p>
-        <img src="img/Geral.jpg" alt="Troca de oleo">
-        <div class="loader"></div>
-
-        <div class="cards">
-        <div class ="card">
-        <h4>Troca de oleo</h4>
-        <p></p>
-        <img src="img/oleo.jpg" alt="Troca de oleo">
-        <div class="loader"></div>
-        
-
-        <div class="cards">
-        <div class ="card">
-        <h4>Travões</h4>
-        <p></p>
-        <img src="img/travoes.jpg.jpg" alt="Travões"> <br>
-        <div class="loader"></div>
-
-  </section>
-<!-- Terceiro bloco: Formulário  ultilizando o form-group  -->
-<section class="contactForm">
-    <h3>Entre em contato</h3>
-    <form id="contactForm">
-     <div class="form-group">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
+            <div class="card">
+                <h4>Geral</h4>
+                <p>Serviços gerais de manutenção</p>
+                <img src="img/Geral.jpg" alt="Troca de óleo">
+                <div class="loader"></div>
+            </div>
+            <div class="card">
+                <h4>Troca de óleo</h4>
+                <p>Realize a troca de óleo do seu veículo</p>
+                <img src="img/oleo.jpg" alt="Troca de óleo">
+                <div class="loader"></div>
+            </div>
+            <div class="card">
+                <h4>Travões</h4>
+                <p>Verificação e troca de travões</p>
+                <img src="img/travoes.jpg" alt="Travões">
+                <div class="loader"></div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="name">Descrição:</label>
-            <input type="text" id="description" name="description" required>
-        </div>
-        <button type="submit">Enviar</button>
-    </form>
-    <p id="formMessage" class="form-message"></p>
-</section>
+    </section>
 
-<div class="social-links">
-    <h4>Siga-nos</h4>
-    <a href="https://facebook.com" target="_blank">Facebook</a>
-    <a href="https://twitter.com" target="_blank">Twitter</a>
-    <a href="https://instagram.com" target="_blank">Instagram</a>
-    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-</div>
-</div>
+    <!-- Terceiro bloco: Formulário -->
+    <section class="contactForm">
+        <h3>Entre em contato</h3>
+        <form id="contactForm" lang="pt-BR">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descrição:</label>
+                <input type="text" id="description" name="description" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="formMessage" class="form-message"></p>
+    </section>
 
+    <!-- Links sociais -->
+    <div class="social-links">
+        <h4>Siga-nos</h4>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
 </main>
-    <footer>
-        <p>&copy; 2024 Nossa Empresa</p>
-    </footer>
-    <script src="script.js"></script>
+
+<footer>
+    <p>&copy; 2024 Nossa Empresa</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

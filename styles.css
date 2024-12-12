@@ -26,12 +26,12 @@ header {
 /* Links de navegação */
 .link-navegacao {
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
     transition: color 0.3s;
 }
 
 .link-navegacao:hover {
-    color: #4CAF50; /* Verde quando passa o mouse */
+    color: green; /* PRETO quando passa o mouse */
 }
 
 .link-navegacao h1 {
