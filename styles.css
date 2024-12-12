@@ -266,8 +266,8 @@ header h1 {
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 40%; /* Largura ajustada */
-    max-width: 800px; /* Largura máxima reduzida */
+    width: 100%; /* Largura ajustada */
+    max-width: 380px; /* Largura máxima reduzida */
     margin-left: auto;
     margin-right: auto; /* Centralizando o formulário */
 }
