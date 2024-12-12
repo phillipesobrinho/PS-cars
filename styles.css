@@ -67,8 +67,8 @@ main {
     text-align: center;
 }
 
-/* Seções (Visão, Compromisso, etc.) */
-.visao, .compromisso {
+/* Seções (Missão, Compromisso, etc.) */
+.missao, .compromisso {
     background-color: #ffffff;
     padding: 30px;
     margin-bottom: 30px;
@@ -77,7 +77,7 @@ main {
     transition: transform 0.3s ease;
 }
 
-.visao:hover, .compromisso:hover {
+.missao:hover, .compromisso:hover {
     transform: translateY(-5px); /* Efeito hover */
 }
 
@@ -256,52 +256,8 @@ header h1 {
     color: #d9534f;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 1024px) {
-    .contactForm {
-        width: 90%; /* Reduzindo a largura para telas médias */
-        padding: 15px; /* Ajustando o padding */
-    }
 
-    .contactForm input,
-    .contactForm button {
-        font-size: 0.8rem; /* Ajustando o tamanho da fonte */
-    }
-}
 
-@media (max-width: 768px) {
-    .contactForm {
-        width: 95%; /* Mais estreito em telas pequenas */
-        padding: 10px; /* Reduzindo o padding */
-    }
-
-    .contactForm input {
-        font-size: 0.8rem; /* Ajustando o tamanho da fonte */
-        padding: 8px; /* Diminui o padding */
-    }
-
-    .contactForm button {
-        font-size: 0.8rem; /* Ajustando o tamanho da fonte */
-        padding: 8px 15px; /* Ajuste do botão */
-    }
-}
-
-@media (max-width: 480px) {
-    .contactForm {
-        width: 100%; /* Preenchendo toda a largura disponível */
-        padding: 10px; /* Reduzindo o padding */
-    }
-
-    .contactForm input {
-        font-size: 0.8rem; /* Reduzindo o tamanho da fonte */
-        padding: 8px; /* Reduzindo o padding */
-    }
-
-    .contactForm button {
-        font-size: 0.8rem; /* Ajuste do tamanho da fonte */
-        padding: 8px 15px; /* Ajuste do tamanho do botão */
-    }
-}
 
 /* Estilo para os links das redes sociais */
 .social-links {
