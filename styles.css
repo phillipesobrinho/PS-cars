@@ -27,11 +27,13 @@ header {
 .link-navegacao {
     text-decoration: none;
     color: whitesmoke;
+    /* color:whitesmoke; so aparece quando passa o mouse  / color: black; fica fixo na tela */
+    
     transition: color 0.3s;
 }
 
 .link-navegacao:hover {
-    color: black; /* Verde quando passa o mouse */
+    color: black; /* black quando passa o mouse */
 }
 
 .link-navegacao h1 {
