@@ -37,6 +37,7 @@ header {
     display: flex; /* Torna os links alinhados na mesma linha */
     gap: 80px; /* Espaçamento entre os links */
     justify-content: center; /* Alinha os links no centro */
+    flex-direction: row;
 }
 .link-navegacao {
     text-decoration: none;
@@ -159,7 +160,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100%;
