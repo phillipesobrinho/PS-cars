@@ -26,9 +26,9 @@ header {
 /* Links de navegação */
 .link-navegacao {
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
     /* color:whitesmoke; so aparece quando passa o mouse  / color: black; fica fixo na tela */
-    
+
     transition: color 0.3s;
 }
 
