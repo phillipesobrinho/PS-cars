@@ -35,7 +35,7 @@ header {
 /* Links de navegação */
 .navegacao-header {
     display: flex; /* Torna os links alinhados na mesma linha */
-    gap: 80px; /* Espaçamento entre os links */
+    gap: 40px; /* Espaçamento entre os links */
     justify-content: center; /* Alinha os links no centro */
     flex-direction: row;
 }
