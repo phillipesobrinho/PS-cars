@@ -33,7 +33,7 @@ header {
 }
 
 .link-navegacao:hover {
-    color: black; /* black quando passa o mouse */
+    color: lightblue; /* black quando passa o mouse */
 }
 
 .link-navegacao h1 {
