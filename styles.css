@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Layout para as sections com maior espaço entre as colunas */
+section {
+    padding: 40px 0;
+}
+
 
 /* Estilos gerais */
 body {
@@ -11,246 +16,121 @@ body {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
+    min-height: 100vh;
 }
 
-.container-header-footer {
-    display: flex; /* Coloca o header e o footer na mesma linha */
-    justify-content: space-between; /* Coloca o header e o footer nas extremidades */
-    width: 100%;
-    flex: 1 1 auto; 
+/* Barra de notificação */
+.notification-bar {
+    background-color: #333; /* Escuro para combinar com o header */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
 }
-
-
 /* Header */
 header {
-    background-color: rgb(18, 17, 17);
+    background: linear-gradient(90deg, #333, #4CAF50); /* Gradiente de cor do fundo */
     color: white;
-    text-align: center;
     padding: 40px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra no header */
-    flex-flow: row;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
 }
 
 /* Links de navegação */
-.navegacao-header {
-    display: flex; /* Torna os links alinhados na mesma linha */
-    gap: 40px; /* Espaçamento entre os links */
-    justify-content: center; /* Alinha os links no centro */
-    flex-direction: row;
+.navbar {
+    background-color: #333; /* Cor escura */
 }
-.link-navegacao {
-    text-decoration: none;
-    color: black;
-    /* color:whitesmoke; so aparece quando passa o mouse  / color: black; fica fixo na tela */
-
-    transition: color 0.3s;
+.navbar-brand {
+    font-size: 1.8rem; /* Tamanho maior para o nome */
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-.link-navegacao:hover {
-    color: lightblue; /* black quando passa o mouse */
+.navbar-nav .nav-link {
+    font-size: 1.1rem; /* Fonte um pouco maior para as opções */
+    color: white !important;
+    text-transform: uppercase; /* Letras maiúsculas para dar um toque mais moderno */
+    letter-spacing: 1px;
 }
 
-.link-navegacao h1 {
-    font-size: 24px;
-    margin: 0;
-    font-weight: normal;
+.navbar-nav .nav-link:hover {
+    color: #4CAF50 !important; /* Cor para o hover */
+    text-decoration: underline; /* Sublinhado para as opções */
 }
-/* Seção principal */
-main {
+
+
+
+/* Para as imagens de carousel (galeria) */
+.galery {
     padding: 20px;
-}
-
-.missao {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.descricao-missao {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #555;
-    text-align: justify; /* Melhor leitura */
-}
-
-/* Títulos das seções */
-.section-titulo {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-align: center;
-}
-
-/* Seções (Visão, Compromisso, etc.) */
-.visao, .compromisso {
-    background-color: #ffffff;
-    padding: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-
-.visao:hover, .compromisso:hover {
-    transform: translateY(-5px); /* Efeito hover */
-}
-
-
-/* Estilo para a galeria */
-.galeria {
-    padding: 40px; /* Aumentando o padding */
     background-color: #fff;
     text-align: center;
-    max-width: 800px; /* Definindo a largura máxima */
-    margin: 0 auto; /* Centralizando a galeria */
-    border-radius: 10px; /* Arredondando as bordas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(209, 207, 207, 0.1);
 }
-
-.galeria h2 {
-    font-size: 2.5rem; /* Tamanho maior para o título */
+.galery h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
     color: rgb(18, 17, 17);
 }
 
-/* Ajustando o layout do carousel */
-.galeria .carousel-inner img {
-    width: 20%;
+.galery .carousel-inner img {
+    width: 100%;
     height: auto;
-    object-fit:cover ; /* Mantém a proporção das imagens */
+    object-fit: cover;
     border-radius: 8px;
 }
-/* Ajustando o layout do carousel */
-.galeria .carousel-item {
-    margin-bottom: 20px;
-}
 
-
-
-/* Parte 2  Estilo para os cartões */
-.cartoes {
+/* Cartões */
+.cards {
     padding: 30px;
     background-color: #f9f9f9;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Garante que o conteúdo fique centralizado */
-    max-width: 1500px; /* Ajuste conforme necessário */
-    
-}
-
-/* Cards com Bootstrap */
-.row.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:line; /* Cards alinhados no centro */
     gap: 20px;
 }
 
+
+/* Melhoria na largura das colunas dos cards */
 .card {
-    background-color: #fff;
     padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 .card:hover {
     transform: translateY(-10px);
 }
 
-.card img {
-    width: 80%;
-    max-width: 450px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-/* Loader (carregamento)  icon confluence */
-.loader {
-    width: 50px;
-    aspect-ratio: 1;
-    display: grid;
-    color: #854f1d;
-    background: radial-gradient(farthest-side, currentColor calc(100% - 6px), #0000 calc(100% - 5px) 0);
-    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 13px), #000 calc(100% - 12px));
-    border-radius: 50%;
-    animation: l19 2s infinite linear;
-}
-
-.loader::before,
-.loader::after {
-    content: "";
-    grid-area: 1/1;
-    background: linear-gradient(currentColor 0 0) center, linear-gradient(currentColor 0 0) center;
-    background-size: 100% 10px, 10px 100%;
-    background-repeat: no-repeat;
-}
-
-.loader::after {
-    transform: rotate(45deg);
-}
-
-@keyframes l19 {
-    100% {
-        transform: rotate(1turn);
-    }
-}
-
-.loader.hidden {
-    display: none;
-}
-
-
-
-
-/* Parte 3 Formulário de contato */
-
+/* Formulário */
 .contactForm {
-    padding: 20px; /* Reduzindo o padding */
+    padding: 20px;
     background-color: #fff;
     text-align: center;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 40%; /* Largura ajustada */
-    max-width: 800px; /* Largura máxima reduzida */
-    margin-left: auto;
-    margin-right: auto; /* Centralizando o formulário */
+    max-width: 600px;
 }
 
-/* Estilo para os campos de input */
-.contactForm input {
-    width: 100%; /* Ocupar toda a largura disponível */
-    padding: 10px; /* Menor padding */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 0.9rem; /* Tamanho da fonte reduzido */
-    margin-bottom: 15px; /* Menor espaço entre os campos */
-}
-
-/* Estilo para o botão de envio */
+/* Botões de formulário */
 .contactForm button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 20px;
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px; /* Menor padding */
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 0.9rem; /* Tamanho da fonte reduzido */
     transition: background-color 0.3s ease;
 }
 
@@ -258,20 +138,7 @@ main {
     background-color: #45a049;
 }
 
-/* Mensagens de erro ou sucesso */
-.form-message {
-    margin-top: 10px;
-    font-size: 0.9rem; /* Tamanho da fonte reduzido */
-    color: #d9534f;
-}
-
-
-
-/* Estilo para os links das redes sociais */
-.social-links {
-    margin-top: 20px;
-}
-
+/* Links sociais */
 .social-links a {
     text-decoration: none;
     margin: 0 10px;
@@ -282,4 +149,20 @@ main {
 
 .social-links a:hover {
     color: #4CAF50;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .galery {
+        padding: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+        width: 100%;
+    }
 }

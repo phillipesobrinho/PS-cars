@@ -7,113 +7,193 @@
 
     <!-- Link Bootstrap (CSS) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<header>
-    <h1>Bem-vindo</h1>
-</header>
 
-<main>
-    <!-- Links de navegação para as seções -->
-    <nav class="navegacao-header">
-        <a href="sobre.html" class="link-navegacao"><h1> Nossa Empresa</h1></a>
-        <a href="missao.html" class="link-navegacao"><h1>Visão</h1></a>
-        <a href="localizacao.html" class="link-navegacao"><h1>Localização</h1></a>
-    </nav>
-    
-
-    <!-- Primeiro bloco -->
-    <section class="galeria">
-        <h2>Galeria</h2>
-         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000"> <!--  data-bs-interval="2000">  intervalo entre as imagens -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/car-oil-workshop.jpg" class="d-block w-100" alt="Workshop de Óleo">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/Check.jpg" class="d-block w-100" alt="Inspeção de Carro">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/inspeções.jpg" class="d-block w-100" alt="Inspeções de veículos">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <header class="bg-dark text-white p-3">
+        <div class="notification-bar">
+            <p>O serviço de atendimento funciona nos dias úteis, das 9h às 18h. Boas festas!</p>
         </div>
-    </section>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Bem-vindo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="missao.html">Visão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="localizacao.html">Localização</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Segundo bloco -->
-    <section class="cartoes">
-        <h3>Veja os nossos serviços abaixo</h3>
-        <div class="cards">
-            <div class="card">
-                <h4></h4>
-                <p> </p>
-                <img src="img/Geral.jpg" alt="Troca de óleo">
-                <div class="loader"></div>
+    <main class="container">
+
+        <!-- 1 bloco: Galery -->
+        <section class="galery my-5">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/car-oil-workshop.jpg" class="d-block w-100" alt="Workshop de Óleo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Check.jpg" class="d-block w-100" alt="Inspeção de Carro">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/inspeções.jpg" class="d-block w-100" alt="Inspeções de veículos">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="card">
-                <h4></h4>
-                <p></p>
-                <img src="img/oleo.jpg" alt="Troca de óleo">
-                <div class="loader"></div>
+        </section>
+
+        <!-- 2 block: Cards -->
+        <section class="card my-5">
+            <h3>Nossos serviços </h3> <br>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/Geral.jpg" alt="Troca de óleo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Geral</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/oleo.jpg" alt="Troca de óleo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Troca de Óleo</h5>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/travoes.jpg" alt="Travões" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Troca de Travões</h5>
+                
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h4></h4>
-                <p></p>
-                <img src="img/travoes.jpg" alt="Travões">
-                <div class="loader"></div>
+        </section>
+
+
+          <!-- 3 block: Cards -->
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+          <section class="card my-5">
+            <h3 class="animate__animated animate__zoomIn animate__delay-1s.5s">
+                 Car vantagens exclusivo nas suas manutenções. <br> Cartão de pontos gratuito – sem custo de adesão e premios de final de ano
+            </h3>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm h-100 animate__animated animate__fadeInUp">
+                        <img src="img/card.jpg" alt="Troca de óleo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Descontos exclusivos e por cada 1€ em compras efetuadas nas lojas físicas, acumula de imediato 0,04€</h5>
+                            <p class="card-text">Vantagens diretas para seus serviços e manutenções.</p>
+                        </div>
+                        <!-- Efeito de hover -->
+                        <div class="card-footer text-center p-3">
+                            <button class="btn btn-primary w-100 animate__animated animate__fadeIn">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm h-100 animate__animated animate__fadeInUp animate__delay-1s">
+                        <img src="img/toyota yaris cartão continente.jpg" alt="promotion" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Acesso direto a Newsletters e Oferta Especial de final de ano.</p>
+                        </div>
+                        <!-- Efeito de hover -->
+                        <div class="card-footer text-center p-3">
+                            <button class="btn btn-primary w-100 animate__animated animate__fadeIn">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm h-100 animate__animated animate__fadeInUp animate__delay-2s">
+                        <img src="img/gift.jpg" alt="Travões" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Descubra vantagens exclusivas com o cartão PScar. Solicite já o seu cartão e comece a beneficiar das ofertas!</p>
+                            <p class="card-text"><strong>Aderir ao Cartão</strong></p>
+                        </div>
+                        <!-- Efeito de hover -->
+                        <div class="card-footer text-center p-3">
+                            <button class="btn btn-primary w-100 animate__animated animate__fadeIn">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+      
+
+        <!-- 4 block:  -->
+        <section class="contactForm my-5">
+            <h3>Entre em contato</h3>
+            <form id="contactForm" lang="pt-BR" class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nome:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <label for="description" class="form-label">Descrição:</label>
+                    <input type="text" id="description" name="description" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success w-100">Enviar</button>
+                </div>
+            </form>
+            <p id="formMessage" class="form-message"></p>
+        </section>
+
+
+        
+
+        <!-- Links socials -->
+        <div class="social-links text-center my-5">
+            <h4>Siga-nos</h4>
+            <a href="https://facebook.com" target="_blank" class="btn btn-outline-primary m-2">Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="btn btn-outline-info m-2">Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="btn btn-outline-danger m-2">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" class="btn btn-outline-secondary m-2">LinkedIn</a>
         </div>
-    </section>
+    </main>
 
-    <!-- Terceiro bloco: Formulário -->
-    <section class="contactForm">
-        <h3>Entre em contato</h3>
-        <form id="contactForm" lang="pt-BR">
-            <div class="form-group">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="description">Descrição:</label>
-                <input type="text" id="description" name="description" required>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-        <p id="formMessage" class="form-message"></p>
-    </section>
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2010 Nossa Empresa</p>
+    </footer>
 
-    <!-- Links sociais -->
-    <div class="social-links">
-        <h4>Siga-nos</h4>
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2010 Nossa Empresa</p>
-</footer>
-
-<!-- Link para o JavaScript do Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+    <!-- Link para o JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
