@@ -4,69 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre - Nossa Empresa</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Nossa Empresa</h1>
+
+    <!-- Cabeçalho -->
+    <header class="bg-dark text-white p-4">
+        <div class="container">
+            <h1 class="display-4">Nossa Empresa</h1>
         </div>
     </header>
 
-    <main>
-        <section class="sobre">
-            <div class="container">
-                <h1>Quem Somos</h1>
-                <p>
-                    A Nossa Empresa foi fundada com o objetivo de oferecer serviços de alta qualidade e confiança no mercado. 
-                    Com anos de experiência no setor, somos uma empresa dedicada à inovação e à satisfação dos nossos clientes. 
-                    Nossa missão é proporcionar soluções que atendam às necessidades de cada um, com o compromisso de sempre oferecer o melhor.
-                </p>
-            </div>
+    <!-- Corpo da página -->
+    <main class="container my-5">
 
-            <div class="historia">
-                <h3 class="section-titulo">Nossa História</h3>
-                <p>
-                    Fundada em 2010, a Nossa Empresa começou com o desejo de oferecer um atendimento diferenciado no mercado. 
-                    Desde então, crescemos e nos tornamos uma referência no setor, sempre buscando inovações para garantir que nossos clientes tenham a melhor experiência possível.
-                </p>
-                <p>
-                    Ao longo dos anos, fomos aprimorando nossos serviços, investindo em tecnologia e na capacitação de nossa equipe. 
-                    Hoje, temos orgulho de ser uma empresa sólida, com uma base de clientes fiéis que confiam em nosso trabalho.
-                </p>
-            </div>
-
-            <div class="valores">
-                <h3 class="section-titulo">Nossos Valores</h3>
-                <ul>
-                    <li><strong>Compromisso:</strong> Nosso compromisso é com a qualidade, a transparência e a ética.</li>
-                    <li><strong>Inovação:</strong> Estamos sempre buscando novas soluções para nossos clientes.</li>
-                    <li><strong>Excelência:</strong> Acreditamos que a excelência em nossos serviços é o que nos destaca no mercado.</li>
-                    <li><strong>Responsabilidade:</strong> Atuamos com responsabilidade social e ambiental, contribuindo para a melhoria da comunidade e do meio ambiente.</li>
-                </ul>
-            </div>
-
-            <div class="equipe">
-                <h3 class="section-titulo">Nossa Equipe</h3>
-                <p>
-                    Contamos com uma equipe de profissionais altamente qualificados e apaixonados pelo que fazem. 
-                    Nosso time é formado por pessoas dedicadas a proporcionar a melhor experiência aos nossos clientes, sempre com foco na inovação e no crescimento contínuo.
-                </p>
-
-              <!-- Primeira Imagem (Maior) -->
-            <img src="img/team.jpg" alt="team" style="width: 400px; height: 250px; object-fit: cover;">
-
-              <!-- Segunda Imagem (Menor) -->
-
-              <img src="img/team2.jpg" alt="team" style="width: 400px; height: 250px; object-fit: cover;">
-
-              <!-- Terceira Imagem (Padrão) -->
-             <img src="img/team3.avif" alt="team" style="width: 400px; height: 250px; object-fit: cover;">
-
-            </div>
-
+        <!-- Seção Quem Somos -->
+        <section class="sobre mb-5">
+            <h1 class="mb-4">Quem Somos</h1>
+            <p>
+                A Nossa Empresa foi fundada com o objetivo de oferecer serviços de alta qualidade e confiança no mercado. 
+                Com anos de experiência no setor, somos uma empresa dedicada à inovação e à satisfação dos nossos clientes. 
+                Nossa missão é proporcionar soluções que atendam às necessidades de cada um, com o compromisso de sempre oferecer o melhor.
+            </p>
         </section>
+
+        <!-- Seção Nossa História -->
+        <section class="historia mb-5">
+            <h3 class="h4">Nossa História</h3>
+            <p>
+                Fundada em 2010, a Nossa Empresa começou com o desejo de oferecer um atendimento diferenciado no mercado. 
+                Desde então, crescemos e nos tornamos uma referência no setor, sempre buscando inovações para garantir que nossos clientes tenham a melhor experiência possível.
+            </p>
+            <p>
+                Ao longo dos anos, fomos aprimorando nossos serviços, investindo em tecnologia e na capacitação de nossa equipe. 
+                Hoje, temos orgulho de ser uma empresa sólida, com uma base de clientes fiéis que confiam em nosso trabalho.
+            </p>
+        </section>
+
+        <!-- Seção Nossos Valores -->
+        <section class="valores mb-5">
+            <h3 class="h4">Nossos Valores</h3>
+            <ul>
+                <li><strong>Compromisso:</strong> Nosso compromisso é com a qualidade, a transparência e a ética.</li>
+                <li><strong>Inovação:</strong> Estamos sempre buscando novas soluções para nossos clientes.</li>
+                <li><strong>Excelência:</strong> Acreditamos que a excelência em nossos serviços é o que nos destaca no mercado.</li>
+                <li><strong>Responsabilidade:</strong> Atuamos com responsabilidade social e ambiental, contribuindo para a melhoria da comunidade e do meio ambiente.</li>
+            </ul>
+        </section>
+
+        <!-- Seção Nossa Equipe -->
+        <section class="equipe mb-5">
+            <h3 class="h4">Nossa Equipe</h3>
+            <p>
+                Contamos com uma equipe de profissionais altamente qualificados e apaixonados pelo que fazem. 
+                Nosso time é formado por pessoas dedicadas a proporcionar a melhor experiência aos nossos clientes, sempre com foco na inovação e no crescimento contínuo.
+            </p>
+
+            <!-- Galeria de Imagens -->
+            <div class="row">
+                <!-- Primeira Imagem (Maior) -->
+                <div class="col-md-4 mb-4">
+                    <img src="img/team.jpg" alt="team" class="img-fluid" style="object-fit: cover;">
+                </div>
+
+                <!-- Segunda Imagem (Menor) -->
+                <div class="col-md-4 mb-4">
+                    <img src="img/team2.jpg" alt="team" class="img-fluid" style="object-fit: cover;">
+                </div>
+
+                <!-- Terceira Imagem (Padrão) -->
+                <div class="col-md-4 mb-4">
+                    <img src="img/team3.avif" alt="team" class="img-fluid" style="object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Link para o JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
