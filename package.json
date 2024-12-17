@@ -1,0 +1,15 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "\u0000 https://phillipesobrinho.github.io/PS-cars/ \u0000 \u0000",
+  "main": "script.js",
+  "devDependencies": {
+    "sass": "^1.83.0"
+  },"scripts": {
+  "build-css": "sass src/styles.scss dist/styles.css", 
+  "watch-css": "sass --watch src/styles.scss:dist/styles.css"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
